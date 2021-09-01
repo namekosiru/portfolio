@@ -1,14 +1,26 @@
-import { Image, Text, VStack } from "@chakra-ui/react";
+import { Image, Text, VStack, Box } from "@chakra-ui/react";
 
 import Img from "../sources/icon.jpg";
+import { HeadingText } from "./atoms/HeadingText";
+import { Icons } from "./Icons";
 
 export const AboutMe = () => {
   return (
-    <VStack>
-      <Image borderRadius="md" src={Img} width={200} height={200} alt="icon" />
-      <Text fontSize={16} fontWeight={"bold"} mb={10}>
-        namekosiru
-      </Text>
-    </VStack>
+    <>
+      <HeadingText>About Me</HeadingText>
+      <Box align="center">
+        <Image
+          borderRadius="md"
+          src={Img}
+          width={200}
+          height={200}
+          alt="icon"
+        />
+        <Text mt={-5} mb={0} fontSize={20} fontWeight={"bold"}>
+          namekosiru
+        </Text>
+        <Icons />
+      </Box>
+    </>
   );
 };
