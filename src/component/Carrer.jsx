@@ -10,7 +10,11 @@ export const Carrer = () => {
       <HeadingText>Carrer</HeadingText>
       <Stack align="center">
         {CarrerList.map((data) => (
-          <Feature title={data["company"]} desc={data["content"]} />
+          <Feature
+            title={data["company"]}
+            desc={data["content"]}
+            date={data["date"]}
+          />
         ))}
       </Stack>
     </>
