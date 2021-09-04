@@ -1,7 +1,7 @@
 import { Image, Text, Box } from "@chakra-ui/react";
 
-import Img from "../sources/icon.jpg";
-import { HeadingText } from "./atoms/HeadingText";
+import Img from "../../sources/icon.jpg";
+import { HeadingText } from "../atoms/HeadingText";
 import { Icons } from "./Icons";
 
 export const AboutMe = () => {

@@ -1,7 +1,7 @@
 import { VStack } from "@chakra-ui/react";
 
-import { Feature } from "./atoms/Feature";
-import { HeadingText } from "./atoms/HeadingText";
+import { Feature } from "../atoms/Feature";
+import { HeadingText } from "../atoms/HeadingText";
 import { CarrerList } from "./CarrerList";
 
 export const Carrer = () => {
