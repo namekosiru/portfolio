@@ -1,4 +1,4 @@
-import { Stack } from "@chakra-ui/react";
+import { VStack } from "@chakra-ui/react";
 
 import { Feature } from "./atoms/Feature";
 import { HeadingText } from "./atoms/HeadingText";
@@ -8,7 +8,7 @@ export const Carrer = () => {
   return (
     <>
       <HeadingText>Carrer</HeadingText>
-      <Stack align="center">
+      <VStack spacing="24px">
         {CarrerList.map((data) => (
           <Feature
             title={data["company"]}
@@ -16,7 +16,7 @@ export const Carrer = () => {
             date={data["date"]}
           />
         ))}
-      </Stack>
+      </VStack>
     </>
   );
 };

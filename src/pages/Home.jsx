@@ -1,11 +1,14 @@
+import { ChakraProvider } from "@chakra-ui/react";
 import { AboutMe } from "../component/AboutMe";
 import { Carrer } from "../component/Carrer";
 
 export const Home = () => {
   return (
     <>
-      <AboutMe />
-      <Carrer />
+      <ChakraProvider>
+        <AboutMe />
+        <Carrer />
+      </ChakraProvider>
     </>
   );
 };
