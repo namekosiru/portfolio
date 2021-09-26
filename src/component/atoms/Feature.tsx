@@ -1,4 +1,12 @@
-import { Box, Flex, Heading, Text, useBreakpointValue } from "@chakra-ui/react";
+import {
+  Box,
+  Flex,
+  Heading,
+  Text,
+  useBreakpointValue,
+  Spacer,
+} from "@chakra-ui/react";
+
 type Props = {
   title: string;
   desc: string;
@@ -20,12 +28,15 @@ export const Feature = (props: Props) => {
           <Text fontSize={"15px"}>{desc}</Text>
         </Box>
       ) : (
-        <Box my={2} w={"2xl"} borderBottom="double">
+        <Box my={2} w={"900px"} borderBottom="double">
           <Flex pb={2}>
             <Heading mr={10} fontSize={"22px"}>
               {title}
             </Heading>
-            <Text fontSize={"18px"}>{date}</Text>
+            <Spacer />
+            <Text fontSize={"18px"} as="kbd">
+              {date}
+            </Text>
           </Flex>
           <Text fontSize={"18px"}>{desc}</Text>
         </Box>
